@@ -1,0 +1,27 @@
+{
+    "name": "rootwork/phalcon-jwt",
+    "description": "A JWT implementation for Phalcon 2",
+    "license": "BSD-3-Clause",
+    "keywords": ["rootwork", "phalcon", "jwt"],
+    "authors": [
+        {
+            "name": "Mike Soule",
+            "email": "mike@rootwork.it"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ext-phalcon": ">=2.0.4",
+        "firebase/php-jwt": "^3.0"
+    },
+    "require-dev": {
+        "phalcon/devtools": "dev-master",
+        "phpunit/phpunit": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": { "Rootwork\\Phalcon\\": "src/Phalcon/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Rootwork\\Test\\": "tests/" }
+    }
+}
