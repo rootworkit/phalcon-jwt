@@ -3,6 +3,28 @@ JWT session drop-in for Phalcon 2.
 
 ## Installation
 
+Install composer in a common location or in your project:
+
+```bash
+curl -s http://getcomposer.org/installer | php
+```
+
+Create the composer.json file as follows:
+
+```json
+{
+    "require": {
+        "rootwork/phalcon-jwt": "dev-master"
+    }
+}
+```
+
+Run the composer installer:
+
+```bash
+php composer.phar install
+```
+
 ## Usage
 
 ### Loading the JWT session service

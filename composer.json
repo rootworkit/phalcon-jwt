@@ -3,6 +3,7 @@
     "description": "A JWT implementation for Phalcon 2",
     "license": "BSD-3-Clause",
     "keywords": ["rootwork", "phalcon", "jwt"],
+    "homepage": "https://github.com/rootworkit/phalcon-jwt",
     "authors": [
         {
             "name": "Mike Soule",
