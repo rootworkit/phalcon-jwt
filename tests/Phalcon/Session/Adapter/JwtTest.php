@@ -10,7 +10,7 @@ namespace Rootwork\Test\Phalcon\Session\Adapter {
      * Test case for Phalcon JWT adapter.
      *
      * @copyright   Copyright (c) 2015-2016 Rootwork InfoTech LLC (www.rootwork.it)
-     * @license     BSD-3-Clause
+     * @license     BSD-3-clause
      * @author      Mike Soule <mike@rootwork.it>
      * @package     Rootwork\Test\Phalcon\Session\Adapter\Jwt
      */

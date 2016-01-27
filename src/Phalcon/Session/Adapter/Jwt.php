@@ -1,12 +1,4 @@
 <?php
-/**
- * Jwt Session adapter
- *
- * @copyright   Copyright (c) 2015 iCheckContractors
- * @license     All Rights Reserved
- * @author      Mike Soule <mike@rootwork.it>
- * @filesource
- */
 
 namespace Rootwork\Phalcon\Session\Adapter;
 
@@ -18,10 +10,10 @@ use Firebase\JWT\JWT as JwtUtil;
 /**
  * Jwt Session adapter
  *
- * @category    App
- * @package     App\Library
- * @subpackage  App\Library\Session
- *
+ * @copyright   Copyright (c) 2015-2016 Rootwork InfoTech LLC (www.rootwork.it)
+ * @license     BSD-3-clause
+ * @author      Mike Soule <mike@rootwork.it>
+ * @package     Rootwork\Phalcon\Session\Adapter
  *
  * @property    string $iss
  * @property    string $sub
