@@ -178,11 +178,11 @@ class Jwt extends Adapter implements AdapterInterface
     }
 
     /**
-     * Write the token out to the client
+     * Encode and return the JWT.
      *
-     * @return bool
+     * @return string
      */
-    public function write()
+    public function getEncodedJwt()
     {
         $now = time();
 
@@ -194,13 +194,23 @@ class Jwt extends Adapter implements AdapterInterface
 
         $payload = array_filter($this->payload);
 
-        $encoded = JwtUtil::encode(
+        return JwtUtil::encode(
             $payload,
             $this->_options['key'],
             $this->_options['algorithm']
         );
+    }
 
-        return setcookie($this->getName(), $encoded, $this->exp, '/', null, null, true);
+    /**
+     * Write the token out to the client
+     *
+     * @return bool
+     */
+    public function write()
+    {
+        $jwt = $this->getEncodedJwt();
+
+        return setcookie($this->getName(), $jwt, $this->exp, '/', null, null, true);
     }
 
     /**
