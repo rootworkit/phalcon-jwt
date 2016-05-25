@@ -1,5 +1,5 @@
 {
-    "name": "machobear/phalcon-jwt",
+    "name": "bigboi900/phalcon-jwt",
     "description": "A JWT implementation for Phalcon 2",
     "license": "BSD-3-Clause",
     "keywords": ["rootwork", "phalcon", "jwt"],
